@@ -1,5 +1,5 @@
 package com.github.bancolombia.demo.model.user;
-import lombok.Builder;
+
 import lombok.Data;
 
 @Data

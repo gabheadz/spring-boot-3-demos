@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: "spring-boot-3-demo"
+  rsocket:
+    server:
+      port: 7000
 management:
   endpoints:
     web:

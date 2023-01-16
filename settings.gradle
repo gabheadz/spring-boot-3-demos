@@ -8,5 +8,11 @@ project(':model').projectDir = file('./domain/model')
 project(':usecase').projectDir = file('./domain/usecase')
 include ':reactive-web'
 project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')
-include ':rest-consumer'
-project(':rest-consumer').projectDir = file('./infrastructure/driven-adapters/rest-consumer')
+//include ':rest-consumer'
+//project(':rest-consumer').projectDir = file('./infrastructure/driven-adapters/rest-consumer')
+include ':http-interface'
+project(':http-interface').projectDir = file('./infrastructure/driven-adapters/http-interface')
+include ':rsocket-responder'
+project(':rsocket-responder').projectDir = file('./infrastructure/entry-points/rsocket-responder')
+include ':rsocket-interface'
+project(':rsocket-interface').projectDir = file('./infrastructure/driven-adapters/rsocket-interface')

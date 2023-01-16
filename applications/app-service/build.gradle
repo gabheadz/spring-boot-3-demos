@@ -1,7 +1,10 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-	implementation project( ':rest-consumer')
+	implementation project( ':rsocket-interface')
+	implementation project( ':rsocket-responder')
+	implementation project( ':http-interface')
+	//implementation project( ':rest-consumer')
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation project( ':reactive-web')
     implementation project(':model')
